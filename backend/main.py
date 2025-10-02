@@ -1,5 +1,5 @@
 import sqlite3
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
@@ -8,7 +8,7 @@ app = FastAPI()
 # CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://practice-sqli-easy.kert.space"],  # Vite 기본 포트
+    allow_origins=["*"],  # Vite 기본 포트
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
