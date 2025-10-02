@@ -14,7 +14,7 @@ function App() {
     setMessage('')
 
     try {
-      const response = await fetch('http://practice-sqli-easy.kert.space/api/login', {
+      const response = await fetch('https://practice-sqli-easy.kert.space/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
