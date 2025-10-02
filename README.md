@@ -46,24 +46,6 @@ Frontend가 http://localhost:5173 에서 실행됩니다.
 2. `admin` 계정으로 로그인 시도
 3. SQL Injection을 이용해서 로그인 우회
 
-### 힌트
-
-- 실행되는 SQL 쿼리: `SELECT * FROM users WHERE username = '...' AND password = '...'`
-- 어떻게 하면 이 쿼리의 결과를 조작할 수 있을까요?
-
-<details>
-<summary>정답 예시</summary>
-
-Username: `admin' --`
-Password: (아무거나)
-
-또는
-
-Username: `admin' OR '1'='1`
-Password: (아무거나)
-
-</details>
-
 ## ⚠️ 주의사항
 
 **이 환경은 교육 목적으로만 사용하세요!**
