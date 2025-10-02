@@ -8,7 +8,7 @@ app = FastAPI()
 # CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite 기본 포트
+    allow_origins=["https://practice-sqli-easy.kert.space"],  # Vite 기본 포트
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
