@@ -61,7 +61,8 @@ async def login(request: LoginRequest):
     user = cursor.fetchone()
     conn.close()
 
-    if user:
+    # 유저를 찾았고 유저네임이 admin인지 체크
+    if user and user[1] == 'admin':
         return {"success": True, "message": "로그인 성공! SQL Injection 취약점을 찾았습니다!"}
     else:
         return {"success": False, "message": "로그인 실패"}
