@@ -37,7 +37,7 @@ function App() {
     <div className="container">
       <div className="login-box">
         <h1>SQL Injection Practice</h1>
-        <p className="subtitle">Admin 계정으로 로그인하세요</p>
+        <p className="subtitle">admin 계정으로 로그인하세요</p>
 
         <form onSubmit={handleLogin}>
           <div className="input-group">
