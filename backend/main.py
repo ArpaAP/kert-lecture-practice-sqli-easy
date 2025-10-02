@@ -34,6 +34,14 @@ def init_db():
     # 기존 데이터 삭제
     cursor.execute('DELETE FROM users')
 
+    # 더미 계정 추가
+    cursor.execute(
+        "INSERT INTO users (username, password) VALUES ('user1', 'password1')"
+    )
+    cursor.execute(
+        "INSERT INTO users (username, password) VALUES ('user2', 'password2')"
+    )
+
     # admin 계정 추가
     cursor.execute(
         "INSERT INTO users (username, password) VALUES ('admin', 'super_secret_password_123')"
